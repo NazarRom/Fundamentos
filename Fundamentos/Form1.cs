@@ -27,6 +27,28 @@ namespace Fundamentos
             this.BackColor = Color.Tomato;
             this.btnPulsar.BackColor = Color.LightGreen;
 
+            //conversion automática
+            short numero = 99;
+            int mayor = numero;
+
+            //casting entre objetos
+            int numeroMayor = 99;
+            short numeroMenor = 888;
+            //necesitamos almacenar 
+            //el numero menor en dato del mayor
+            numeroMenor = (short) numeroMayor;
+
+            //convertir string a primitivo
+            string textoNumero = "1444";
+            int numeroEntero = int.Parse(textoNumero);
+            double doble = double.Parse(textoNumero);
+
+            //convertir objetos a string
+            int valor = 88888;
+            string texto = valor.ToString();
+            string boton = this.btnPulsar.ToString();
+
+
         }
     }
 }
