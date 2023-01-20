@@ -13,7 +13,7 @@ namespace ProyectoClases
         {
             this.SalarioMinimo += 200;
         }
-        //override
+        //override 
         public override int GetDiasVacaciones()
         {
             Debug.WriteLine("GetDiasVacaciones() DIRECTOR");
