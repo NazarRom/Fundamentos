@@ -21,7 +21,7 @@ namespace ProyectoClases
             return vacacionesEmpleado + 8;
         }
 
-
+        //aaaa
         public override string ToString()
         {
             return this.GetNombreCompleto() + ", Salario: " + this.SalarioMinimo + ", Vacaciones" +
