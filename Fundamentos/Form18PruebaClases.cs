@@ -43,5 +43,27 @@ namespace Fundamentos
            
 
         }
+
+        private void btnEmpleados_Click(object sender, EventArgs e)
+        {
+            //Empleados empleado = new Empleados();
+            //empleado.Nombre = "Empleado";
+            //empleado.Apellidos = " Empleado";
+            //this.lstPersonas.Items.Add(empleado.GetNombreCompleto()
+            //     + "Salario " + empleado.GetSalarioMinimo());
+            //this.lstPersonas.Items.Add(empleado.GetNombreCompleto()
+            //    + ", Vacaciones " + empleado.GetDiasVacaciones());
+
+
+
+            Director director = new Director();
+            director.Nombre = "Dire";
+            director.Apellidos = "Dire";
+            this.lstPersonas.Items.Add(director.GetNombreCompleto()
+                + ", Salario " + director.GetSalarioMinimo());
+            this.lstPersonas.Items.Add(director.GetNombreCompleto()
+                + ", Vacaciones " + director.GetDiasVacaciones());
+            this.lstPersonas.Items.Add(director.ToString());
+        }
     }
 }

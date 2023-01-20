@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,12 +17,23 @@ namespace ProyectoClases
         //internal solo dentro del proyecto
         //private solo dentro de la clase
         // public string PropiedadAutoImplementada { get; set; } para que en otro pado aparezca con llave y bonito
-      
+
+
+        #region
+
         public Persona()
         {
+            Debug.WriteLine("Constructor Persona vacio");
             this.DomicilioVacaciones = new Direccion("AA", "Miami");
         }
 
+        public Persona(string nombre, string apellidos)
+        {
+            Debug.WriteLine("Constructor Persona 2 parametros");
+            this.Nombre = nombre;
+            this.Apellidos = apellidos;
+        }
+        #endregion
 
         #region Campos de propiedad
         private int _Edad;

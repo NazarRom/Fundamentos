@@ -1,6 +1,6 @@
 ﻿namespace Fundamentos
 {
-    partial class Form19TemperaturasClases
+    partial class Form19TemperaturasClase
     {
         /// <summary>
         /// Required designer variable.
@@ -48,6 +48,7 @@
             this.lstMeses.Name = "lstMeses";
             this.lstMeses.Size = new System.Drawing.Size(173, 319);
             this.lstMeses.TabIndex = 19;
+            this.lstMeses.SelectedIndexChanged += new System.EventHandler(this.lstMeses_SelectedIndexChanged);
             // 
             // txtTempAnual
             // 
@@ -105,7 +106,6 @@
             this.btnDatos.TabIndex = 12;
             this.btnDatos.Text = "Mostar datos";
             this.btnDatos.UseVisualStyleBackColor = true;
-            this.btnDatos.Click += new System.EventHandler(this.btnDatos_Click_1);
             // 
             // btnMeses
             // 
@@ -127,7 +127,7 @@
             this.lblMeses.TabIndex = 10;
             this.lblMeses.Text = "Meses";
             // 
-            // Form19TemperaturasClases
+            // Form19TemperaturasClase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -142,8 +142,8 @@
             this.Controls.Add(this.btnDatos);
             this.Controls.Add(this.btnMeses);
             this.Controls.Add(this.lblMeses);
-            this.Name = "Form19TemperaturasClases";
-            this.Text = "Form19TemperaturasClases";
+            this.Name = "Form19TemperaturasClase";
+            this.Text = "Form19TemperaturasClase";
             this.ResumeLayout(false);
             this.PerformLayout();
 
