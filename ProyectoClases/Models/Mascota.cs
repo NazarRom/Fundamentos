@@ -13,5 +13,7 @@ namespace ProyectoClases.Models
 
         public int Years { get; set; }
 
+        public byte[] Imagen { get; set; }
+
     }
 }

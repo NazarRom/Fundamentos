@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace ProyectoClases.Helpers
 {
@@ -71,5 +72,6 @@ namespace ProyectoClases.Helpers
             string data = this.GetMascotasString();
            await HelperFiles.WriteFileAsync(path, data);
         }
+
     }
 }

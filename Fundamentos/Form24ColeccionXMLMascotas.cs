@@ -20,6 +20,14 @@ namespace Fundamentos
             mascota.Nombre = this.txtNombre.Text;
             mascota.Raza = this.txtRaza.Text;
             mascota.Years = int.Parse(this.txtEdad.Text);
+            //convert image to array
+            //convert file to byte[]
+            //this.pictureBox1.Image = Image.FromFile(@"C:\Users\Alumnos MCSD Mañana\Desktop\Full Stack\JQUERY\img\miata.jpg");
+           
+            //para pintar necesitamos la clase image: Image.FromStream(stream);
+
+           
+           
 
             this.coleccionMascotas.Add(mascota);
 
@@ -72,6 +80,22 @@ namespace Fundamentos
                 this.txtNombre.Text = mascota.Nombre;
                 this.txtRaza.Text = mascota.Raza;
                 this.txtEdad.Text = mascota.Years.ToString();
+            }
+        }
+
+        private void btnExaminar_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                string path = ofd.FileName;
+
+                Image img = Image.FromFile(path);
+                byte[] bytes = (byte[])(new ImageConverter()).ConvertTo(img, typeof(byte[]));
+
+                this.pictureBox1.Image = Image.FromStream(new MemoryStream(bytes));
+
             }
         }
     }
